@@ -17,5 +17,13 @@ class LinkedListNode {
         this.next = next
     }
 }
-// export default {LinkedList, LinkedListNode}
+
+LinkedList.fromValues = function(...values) {
+    const ll = new LinkedList()
+    for (let i = values.length-1; i>=0; i--){
+        ll.insertAtHead(values[i])
+    }
+    return ll
+}
+
 module.exports = LinkedList
