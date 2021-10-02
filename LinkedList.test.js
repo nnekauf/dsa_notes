@@ -21,7 +21,7 @@ describe("#getByIndex", () => {
         test("it returns null", () => {
             const ll = LinkedList.fromValues(10, 20)
 
-            expect(ll.getByIndex(-1).value).toBeNull()
+            expect(ll.getByIndex(-1)).toBeNull()
         })
     })
 
@@ -29,7 +29,7 @@ describe("#getByIndex", () => {
         test("it returns null", ()=> {
             const ll = LinkedList.fromValues(10,20)
 
-            expect(ll.getByIndex(5).value).toBeNull()
+            expect(ll.getByIndex(5)).toBeNull()
         })
     })
 
