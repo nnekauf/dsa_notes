@@ -1,8 +1,7 @@
-const { expect } = require('@jest/globals')
-const { describe } = require('yargs')
+
 const LinkedList = require('./LinkedList')
 
-describe("#insertAtHead", () => {
+describe('#insertAtHead', () => {
     test(" it adds the element to the beginning of the list", () =>{
         const ll = new LinkedList()
         ll.insertAtHead(10)
