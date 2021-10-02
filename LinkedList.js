@@ -7,7 +7,7 @@ class LinkedList {
     insertAtHead(data) {
         const newNode = new LinkedListNode(data, this.head)
         this.head = newNode
-        length++
+        this.length++
     }
 }
 
@@ -17,4 +17,5 @@ class LinkedListNode {
         this.next = next
     }
 }
+// export default {LinkedList, LinkedListNode}
 module.exports = LinkedList
