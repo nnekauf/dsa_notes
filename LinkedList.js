@@ -21,6 +21,17 @@ class LinkedList {
         return current
     }
 
+    insertAtIndex(index, value){
+        if (index = 0 ){return this.insertAtHead(value)} 
+
+        let prev = this.getByIndex(index - 1)
+        if (prev == null) return null
+        
+        prev.next = new LinkedListNode(value, prev.next)
+        
+    }
+
+
     print() {
         let output = ""
         let current = this.head

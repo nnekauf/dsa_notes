@@ -74,9 +74,10 @@ describe("#insertAtIndex", () => {
             const ll = LinkedList.fromValues(10, 20)
             ll.insertAtIndex(0, 30)
 
-            expect(ll.length).toBe(3)
+            
             expect(ll.head.value).toBe(30)
             expect(ll.head.next.value).toBe(10)
+            expect(ll.length).toBe(3)
         })
     })
 
@@ -86,9 +87,10 @@ describe("#insertAtIndex", () => {
             ll.insertAtIndex(2, 30)
             const node = ll.getByIndex(2)
 
-            expect(ll.length).toBe(4)
+            
             expect(ll.node.value).toBe(30)
             expect(ll.head.next.value).toBe(40)
+            expect(ll.length).toBe(4)
         })
     })
 })
